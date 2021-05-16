@@ -1,0 +1,47 @@
+{
+  "name": "dropdown-navigation-bar-babel-provider",
+  "main": "./lib/babelProvider.js",
+  "version": "0.1.0",
+  "description": "Provides Identifiers For Dropdown Navigation Bar Using Babel Parser",
+  "keywords": [
+    "dropdown navigation bar",
+    "babel",
+    "provider",
+    "identifiers",
+    "plugin"
+  ],
+  "engines": {
+    "atom": ">=1.56.0 <2.0.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "lint": "eslint src/**",
+    "version": "conventional-changelog -o CHANGELOG.md -p eslint && git add CHANGELOG.md"
+  },
+  "providedServices": {
+    "dropdown-navigation-bar-identifiers-provider": {
+      "versions": {
+        "1.0.0": "dropdownNavigationBarProviderServiceV1"
+      }
+    }
+  },
+  "author": "EnterTheNameHere Bohemian",
+  "license": "MIT",
+  "dependencies": {
+    "dropdown-navigation-bar": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/eslint-plugin": "^7.13.16",
+    "@babel/parser": "^7.14.1",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.14.1",
+    "eslint": "^7.26.0",
+    "eslint-plugin-brace-rules": "^0.1.6",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-security": "^1.4.0"
+  }
+}
