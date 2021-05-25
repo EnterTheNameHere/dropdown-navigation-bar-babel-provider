@@ -1,7 +1,7 @@
 {
   "name": "dropdown-navigation-bar-babel-provider",
   "main": "./lib/babelProvider.js",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha",
   "description": "Provides Identifiers For Dropdown Navigation Bar Using Babel Parser",
   "keywords": [
     "dropdown navigation bar",
